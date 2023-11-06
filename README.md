@@ -1,6 +1,6 @@
 # projeto-inicial-fetch-github-api
 
-Repositório contendo os arquivos iniciais do projeto de Fetch e GitHub API
+### Repositório contendo os arquivos iniciais do projeto de Fetch e GitHub API!
 
 Os desafios do Dev em Dobro ajudam você a melhorar suas habilidades de codificação criando projetos realistas.
 
@@ -15,7 +15,13 @@ Os desafios do Dev em Dobro ajudam você a melhorar suas habilidades de codifica
 ### O que aprendi
 
 ```Js
+    document.getElementById('btn-search').addEventListener('click', () => {
+        const userName = document.getElementById('input-search').value;
 
+        if(validateEmptyInput(userName)) return;
+
+        getUserProfile(userName);
+    });
 ```
 
 ### Construído com
