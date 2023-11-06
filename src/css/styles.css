@@ -1,17 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  font-weight: 300;
-}
-
-img {
-  max-width: 100%;
-}
-
 body {
-  background-color:#24292e;
+  background-color:#24292E;
   font-family: "Kumbh Sans", sans-serif;  
   text-align: center;    
   padding-bottom: 100px;
@@ -24,10 +14,31 @@ main {
   padding: 50px 0 0;      
 }
 
+.div-icon-a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.icon-a {
+  background: linear-gradient(45deg, #24292E, #00F, #0F0, #F00, #24292E);
+	background-size: 400% 400%;
+  animation: gradient 4s linear infinite;
+  border-radius: 50%;
+  padding: 1px;
+}
+
 .devicon-github-original{
   font-size: 60px;
-  margin-bottom: 30px;
-  color: #FFFFFF;
+  color: #FFF;
+  border-radius: 50%;
+  background-color: #24292E;
+}
+
+.devicon-github-original{
+  font-size: 60px;
+  color: gray;
 }
 
 .section{
@@ -35,10 +46,10 @@ main {
 }
 
 .container {
-  width: 60%; /* se for uma tela menor que 980px vai se adaptar a 70% */
-  max-width: 960px; /* quando chegar em 980px para de aumentar */
+  width: 60%;
+  max-width: 960px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 25px 50px -12px;
-  background-color: #fff;
+  background-color: #FFF;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,6 +69,7 @@ main {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 30px;
+  cursor: default;
 }
 
 .container header #input-search {
@@ -77,12 +89,15 @@ main {
   border-radius: 7px;  
   cursor: pointer;
   border: 1px solid grey;
+  transition: .3s ease-in-out;
 }
 
 .container header #btn-search:hover {
-  background-color: hotpink;
-  color: #ffffff;
-  border-color: #ffffff;
+  background: linear-gradient(45deg, #24292E, #00F, #0F0, #F00, #24292E);
+	background-size: 400% 400%;
+  animation: gradient 4s linear infinite;
+  color: #FFF;
+  border-color: #FFF;
 }
 
 .container .profile-data{
@@ -106,7 +121,10 @@ main {
 .container .profile-data .info img{
   width: 50%;
   border-radius: 50%;
-  border: 10px solid hotpink;
+  border: 5px solid transparent;
+  background: linear-gradient(45deg, #24292E, #00F, #0F0, #F00, #24292E);
+	background-size: 400% 400%;
+  animation: gradient 4s linear infinite;
 }
 
 .container .profile-data .info h1{
@@ -121,8 +139,6 @@ main {
   line-height: 23px;
 }
 
-/* REPOSITORIES */
-
 .container .profile-data .repositories h2{
   margin-bottom: 30px;
   text-align: center;
@@ -132,64 +148,44 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 10px;
+}
+
+.container .profile-data .repositories ul li {
+  display: flex;
+  background: linear-gradient(45deg, #24292E, #00F, #0F0, #F00, #24292E);
+	background-size: 400% 400%;
+  animation: gradient 4s linear infinite;
+  border-radius: 7px;
+  padding: 1px;
 }
 
 .container .profile-data .repositories ul li a{
   padding: 20px;
-  border: 1px solid grey;  
-  margin: 20px;
   display: block;
+  background-color: #FFF;
   border-radius: 7px;
   transition: 0.3s ease-in-out;
+  color: #24292E;
 }
 
 .container .profile-data .repositories ul li a:hover{
-  background-color:hotpink;
-  color: #fff
+  background-color: transparent;
+  color: #FFF;
 }
 
 .container .profile-data.hide{
   display: none;
 }
 
-@media (max-width: 1280px) {
-  .container {
-    flex-direction: column;
-    width: 90%;
-    border-radius: 20px;
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
   }
-
-  .container header {
-    width: 100%;
+  50% {
+    background-position: 100% 50%;
   }
-
-  .container header h1 {
-    font-size: 24px;
-    text-align: center;
-  }
-}
-
-@media (max-width: 768px) {
-  .container header #input-search,
-  .container header #btn-search
-  {
-    width: 100%;
-  }
-}
-
-@media (max-width: 425px) {
-  main {
-    padding: 15% 0;    
-  }
-
-  .container .profile-data .info img{
-    margin-bottom: 20px;
-  }
-
-  .container .profile-data .info img,
-  .container .profile-data .info .data
-  {
-    width: 100%;
-    padding: 0;
+  100% {
+    background-position: 0% 50%;
   }
 }
