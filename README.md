@@ -30,6 +30,7 @@ Os desafios do Dev em Dobro ajudam você a melhorar suas habilidades de codifica
 - Propriedades personalizadas CSS
 - Caixa flexível
 - Js com Fetch e GitHub API
+
 ## Desenvolvido em:
 
 <div>
