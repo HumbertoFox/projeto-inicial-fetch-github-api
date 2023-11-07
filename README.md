@@ -8,7 +8,7 @@ Os desafios do Dev em Dobro ajudam você a melhorar suas habilidades de codifica
 
 <div align="center">
 
-  <img src="https://github.com/HumbertoFox/repository/assets/126817628/13d3004a-c77a-48d8-bb35-e3e50d6271d0" width="400px"/>
+  <img src="https://github.com/HumbertoFox/repository/assets/126817628/70a25b2c-22dd-4773-8164-ef444a2d5d1d" width="400px"/>
 
 </div>
 
