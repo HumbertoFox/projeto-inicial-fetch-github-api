@@ -2,7 +2,7 @@
 
 ### Repositório contendo os arquivos iniciais do projeto de Fetch e GitHub API!
 
-Os desafios do Dev em Dobro ajudam você a melhorar suas habilidades de codificação criando projetos realistas.
+Os desafios do DevQuest ajudam você a melhorar suas habilidades de codificação criando projetos realistas.
 
 ## Layout do projeto em tela de Desktop/Notebook/Tablet/Mobile.
 
