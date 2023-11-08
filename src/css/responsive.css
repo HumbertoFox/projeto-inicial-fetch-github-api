@@ -21,7 +21,7 @@
   {
       width: 100%;
   }
-  .container .profile-data .info img{
+  .container .profile-data .info img {
     margin-bottom: 20px;
   }
   main {
@@ -33,7 +33,10 @@
   width: 100%;
   padding: 0;
   }
-
+  .container .profile-data .events ul li {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 425px) {

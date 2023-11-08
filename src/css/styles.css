@@ -167,12 +167,19 @@ main {
 }
 
 .container .profile-data .repositories ul li a {
-  padding: 20px;
+  padding: 10px;
   display: block;
   background-color: #FFF;
   border-radius: 7px 0;
   transition: 0.3s ease-in-out;
   color: #24292E;
+}
+
+.container .profile-data .repositories tbody {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .container .profile-data .repositories ul li a:hover {
