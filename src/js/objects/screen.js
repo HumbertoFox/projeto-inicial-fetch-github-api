@@ -7,7 +7,10 @@ const screen =
                                             <img src="${user.avatarUrl}" alt="Foto do Perfil do Usuário" />
                                             <div class="data">
                                                 <h1>${user.name ?? 'Não possui nome cadastrado 🤦‍♂️'}</h1>
+                                                <h2>${user.login}</h2><br>
                                                 <p>${user.bio ?? 'Não possui BIO cadastrada 😢'}</p>
+                                                <p>👥 ${user.followers} Seguidores</p>
+                                                <p>👤 ${user.following} Seguindo</p>
                                             </div>
                                       </div>`
 
