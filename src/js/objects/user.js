@@ -8,6 +8,7 @@ const user =
     following: '',
     userName: '',
     repositories: [],
+    events: [],
     setInfo(gitHubUser)
     {
         this.avatarUrl = gitHubUser.avatar_url;
@@ -20,8 +21,12 @@ const user =
     },
     setRepositories(repositories)
     {
-        this.repositories = repositories
+        this.repositories = repositories;
+    },
+    setEvents(events)
+    {
+        this.events = events;
     }
-}
+};
 
 export { user };

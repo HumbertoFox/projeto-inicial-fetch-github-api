@@ -29,19 +29,19 @@ main {
   padding: 1px;
 }
 
-.devicon-github-original{
+.devicon-github-original {
   font-size: 60px;
   color: #FFF;
   border-radius: 50%;
   background-color: #24292E;
 }
 
-.devicon-github-original{
+.devicon-github-original {
   font-size: 60px;
   color: gray;
 }
 
-.section{
+.section {
   padding: 70px 0;
 }
 
@@ -100,7 +100,7 @@ main {
   border-color: #FFF;
 }
 
-.container .profile-data{
+.container .profile-data {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -113,12 +113,12 @@ main {
   align-items: center;
 }
 
-.container .profile-data .info .data{
+.container .profile-data .info .data {
   padding: 40px;
   width: 50%;
 }
 
-.container .profile-data .info img{
+.container .profile-data .info img {
   width: 50%;
   border-radius: 50%;
   border: 5px solid transparent;
@@ -127,24 +127,30 @@ main {
   animation: gradient 4s linear infinite;
 }
 
-.container .profile-data .info h1{
+.container .profile-data .info h1 {
   font-size: 20px;
   margin-bottom: 20px;
   font-weight: 700;
 }
 
-.container .profile-data .info p{
+.container .profile-data .info h2 {
+  margin-bottom: 20px;
+}
+
+.container .profile-data .info p {
   font-size: 15px;  
   font-weight: 400;
   line-height: 23px;
 }
 
-.container .profile-data .repositories h2{
-  margin-bottom: 30px;
+.container .profile-data .repositories h2, .container .profile-data .events h2 {
+  font-weight: 700;
+  color: #24292E;
   text-align: center;
+  margin-bottom: 30px;
 }
 
-.container .profile-data .repositories ul{
+.container .profile-data .repositories ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -160,22 +166,32 @@ main {
   padding: 1px;
 }
 
-.container .profile-data .repositories ul li a{
+.container .profile-data .repositories ul li a {
   padding: 20px;
   display: block;
   background-color: #FFF;
-  border-radius: 7px;
+  border-radius: 7px 0;
   transition: 0.3s ease-in-out;
   color: #24292E;
 }
 
-.container .profile-data .repositories ul li a:hover{
+.container .profile-data .repositories ul li a:hover {
   background-color: transparent;
   color: #FFF;
 }
 
-.container .profile-data.hide{
+.container .profile-data.hide {
   display: none;
+}
+
+.container .profile-data .events li {
+  color: dimgray;
+}
+
+.container .profile-data .events li span {
+  color: #24292E;
+  font-weight: 700;
+  padding-right: 15px;
 }
 
 @keyframes gradient {
