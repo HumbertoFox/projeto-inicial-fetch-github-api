@@ -8,7 +8,7 @@ Os desafios do DevQuest ajudam você a melhorar suas habilidades de codificaçã
 
 <div align="center">
 
-  <img src="https://github.com/HumbertoFox/repository/assets/126817628/70a25b2c-22dd-4773-8164-ef444a2d5d1d" width="400px"/>
+  <img src="https://github.com/HumbertoFox/repository/assets/126817628/64db0cad-76dd-4671-bc70-8d612caf88b1" width="400px"/>
 
 </div>
 
