@@ -118,13 +118,21 @@ main {
   width: 50%;
 }
 
-.container .profile-data .info img {
+.container .profile-data .info .fundo-img {
   width: 50%;
+  display: flex;
   border-radius: 50%;
   border: 5px solid transparent;
   background: linear-gradient(45deg, #24292E, #00F, #0F0, #F00, #24292E);
 	background-size: 400% 400%;
   animation: gradient 4s linear infinite;
+}
+
+.container .profile-data .info img {
+  width: 100%;
+  background-color: #FFF;
+  border-radius: 50%;
+
 }
 
 .container .profile-data .info h1 {

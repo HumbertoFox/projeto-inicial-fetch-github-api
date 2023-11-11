@@ -4,7 +4,9 @@ const screen =
     renderUser(user)
     {
         this.userProfile.innerHTML = `<div class="info">
-                                            <img src="${user.avatarUrl}" alt="Foto do Perfil do Usuário" />
+                                            <div class="fundo-img">
+                                                <img src="${user.avatarUrl}" alt="Foto do Perfil do Usuário" />
+                                            </div>
                                             <div class="data">
                                                 <h1>${user.name ?? 'Não possui nome cadastrado 🤦‍♂️'}</h1>
                                                 <h2>${user.login}</h2>
