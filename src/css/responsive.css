@@ -21,13 +21,13 @@
   {
       width: 100%;
   }
-  .container .profile-data .info img {
+  .container .profile-data .info .fundo-img {
     margin-bottom: 20px;
   }
   main {
     padding: 15% 0;    
   }
-  .container .profile-data .info img,
+  .container .profile-data .info .fundo-img,
   .container .profile-data .info .data
   {
   width: 100%;
