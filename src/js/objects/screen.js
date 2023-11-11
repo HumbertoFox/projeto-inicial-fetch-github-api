@@ -12,7 +12,7 @@ const screen =
                                                 <h2>${user.login}</h2>
                                                 <p>${user.bio ?? 'Não possui BIO cadastrada 😢'}</p>
                                                 <p>👥 ${user.followers} Seguidores</p>
-                                                <p>👤 ${user.following} Seguindo</p>
+                                                <p>👥 ${user.following} Seguindo</p>
                                             </div>
                                       </div>`
 
@@ -27,7 +27,7 @@ const screen =
                                                                             <td>🍴 ${repo.forks_count}</td>
                                                                             <td>⭐ ${repo.stargazers_count}</td>
                                                                             <td>👀 ${repo.watchers_count}</td>
-                                                                            <td>👨‍💻 ${repo.language}</td>
+                                                                            <td>👨‍💻 ${repo.language ?? '?'}</td>
                                                                         </tr>
                                                                     </table>
                                                                     </a>
