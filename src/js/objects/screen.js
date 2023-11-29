@@ -19,17 +19,17 @@ const screen =
         let repositoriesItens = '';
         user.repositories.forEach(repo => repositoriesItens += `<li>
                                                                     <a href="${repo.html_url}" target="_blank">
-                                                                    <table>
-                                                                        <tr>
-                                                                            <th colspan='4'>${repo.name}</th>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>🍴 ${repo.forks_count}</td>
-                                                                            <td>⭐ ${repo.stargazers_count}</td>
-                                                                            <td>👀 ${repo.watchers_count}</td>
-                                                                            <td>👨‍💻 ${repo.language ?? '?'}</td>
-                                                                        </tr>
-                                                                    </table>
+                                                                        <table>
+                                                                            <tr>
+                                                                                <th colspan='4'>${repo.name}</th>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>🍴 ${repo.forks_count}</td>
+                                                                                <td>⭐ ${repo.stargazers_count}</td>
+                                                                                <td>👀 ${repo.watchers_count}</td>
+                                                                                <td>👨‍💻 ${repo.language ?? '?'}</td>
+                                                                            </tr>
+                                                                        </table>
                                                                     </a>
                                                                 </li>`)
 
