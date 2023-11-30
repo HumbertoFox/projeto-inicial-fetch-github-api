@@ -17,16 +17,15 @@ document.getElementById('input-search').addEventListener('keyup', (e) => {
     const key = e.which || e.keyCode;
     const isEnterKeyPressed = key === 13;
 
-    if (isEnterKeyPressed)
-    {
+    if (isEnterKeyPressed) {
 
         if(validateEmptyInput(userName)) return;
 
         getUserData(userName);
-    }
+    };
 });
 
-async function getUserData(userName){
+async function getUserData(userName) {
     
     const userReponse = await getUser(userName);
 
@@ -48,11 +47,10 @@ async function getUserData(userName){
 
 };
 
-function validateEmptyInput(userName)
-{
+function validateEmptyInput(userName) {
     if(userName.length === 0)
     {
-        alert('Preencha o campo com o nome do usuário do GitHube!');
+        alert('Preencha o campo com o nome do usuário do GitHub!');
         return true;
-    }
+    };
 };

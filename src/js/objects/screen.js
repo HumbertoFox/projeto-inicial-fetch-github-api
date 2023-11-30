@@ -1,8 +1,6 @@
-const screen =
-{
+const screen = {
     userProfile: document.querySelector('.profile-data'),
-    renderUser(user)
-    {
+    renderUser(user) {
         this.userProfile.innerHTML = `<div class="info">
                                             <div class="fundo-img">
                                                 <img src="${user.avatarUrl}" alt="Foto do Perfil do Usuário" />
@@ -33,8 +31,7 @@ const screen =
                                                                     </a>
                                                                 </li>`)
 
-        if(user.repositories.length > 0)
-        {
+        if(user.repositories.length > 0) {
             this.userProfile.innerHTML += `<div class="repositories section">
                                                 <h2>Repositórios</h2>
                                                 <ul>${repositoriesItens}</ul>
@@ -42,10 +39,11 @@ const screen =
         };
 
         let eventsItens = '';
-        user.events.forEach(event => eventsItens += `<li><span>${event.repo.name}</span> - ${event.payload.commits ? event.payload.commits[0].message : 'Não possui commits'}</li>`);
+        user.events.forEach(event => eventsItens += `<li>
+                                                        <span>${event.repo.name}</span> - ${event.payload.commits ? event.payload.commits[0].message : 'Não possui commits'}
+                                                     </li>`);
 
-        if(user.events.length > 0)
-        {
+        if(user.events.length > 0) {
             this.userProfile.innerHTML += `<div class="events">
                                                 <h2>Eventos</h2>
                                                 <ul>${eventsItens}</ul>
@@ -53,8 +51,7 @@ const screen =
         };
     },
 
-    renderNotFound()
-    {
+    renderNotFound() {
         this.userProfile.innerHTML = '<h3>Usuário não encontrado!</h3>';
     }
 };
