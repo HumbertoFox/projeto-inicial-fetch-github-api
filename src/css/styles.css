@@ -79,6 +79,7 @@ main {
   padding: 10px;
   border-radius: 7px;
   border: 1px solid grey;
+  outline: none;
 }
 
 .container header #btn-search {
