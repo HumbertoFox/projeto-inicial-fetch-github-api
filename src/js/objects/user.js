@@ -1,5 +1,4 @@
-const user = 
-{
+const user = {
     avatarUrl:'',
     name: '',
     bio: '',
@@ -9,8 +8,8 @@ const user =
     userName: '',
     repositories: [],
     events: [],
-    setInfo(gitHubUser)
-    {
+
+    setInfo(gitHubUser) {
         this.avatarUrl = gitHubUser.avatar_url;
         this.name = gitHubUser.name;
         this.bio = gitHubUser.bio;
@@ -19,12 +18,12 @@ const user =
         this.following = gitHubUser.following;
         this.userName = gitHubUser.login;
     },
-    setRepositories(repositories)
-    {
+
+    setRepositories(repositories) {
         this.repositories = repositories;
     },
-    setEvents(events)
-    {
+
+    setEvents(events) {
         this.events = events;
     }
 };

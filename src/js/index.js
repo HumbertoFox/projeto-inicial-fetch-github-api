@@ -3,6 +3,7 @@ import { getRepositories } from './services/repositories.js';
 import { user } from './objects/user.js';
 import { screen } from './objects/screen.js';
 import { getEvents } from './services/events.js';
+import { eventsQuantity } from './services/variables.js';
 
 document.getElementById('btn-search').addEventListener('click', () => {
     const userName = document.getElementById('input-search').value;
@@ -37,7 +38,9 @@ async function getUserData(userName) {
 
     const repositoriesResponse = await getRepositories(userName);
     const eventsResponse = await getEvents(userName);
-    const filtredEvents = eventsResponse.filter(e => e.type === "CreateEvent" || e.type === "PushEvent");
+    const filtredEvents = eventsResponse.filter(e => e.type === "CreateEvent" ||
+                                                e.type === "PushEvent").slice(0, eventsQuantity);
+                                                console.log(filtredEvents);
 
     user.setInfo(userReponse);
     user.setRepositories(repositoriesResponse);
