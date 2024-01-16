@@ -42,8 +42,8 @@ const screen = {
         user.events.forEach(event => eventsItens += `<li>
                                                         <span>${event.repo.name} -</span>
                                                         ${event.payload.commits ?
-                                                            event.payload.commits[0].message :
-                                                            'Não possui commits'}
+                                                        event.payload.commits[0].message :
+                                                        'Não possui commits'}
                                                      </li>`);
 
         if(user.events.length > 0) {
