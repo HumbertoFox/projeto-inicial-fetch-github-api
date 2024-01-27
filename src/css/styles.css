@@ -186,8 +186,8 @@ main {
 
 .container .profile-data .repositories tbody {
   display: flex;
-  align-items: start;
   flex-direction: column;
+  align-items: center;
   gap: 10px;
 }
 
